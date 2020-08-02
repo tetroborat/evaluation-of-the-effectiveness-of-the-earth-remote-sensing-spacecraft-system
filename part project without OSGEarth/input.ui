@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C_input</class>
+ <widget class="QWidget" name="C_input">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>672</width>
+    <height>499</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="C_listSC" name="page_SC"/>
+     <widget class="C_listregion" name="page_region"/>
+     <widget class="C_listgcc" name="page_ground_complex"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>C_listSC</class>
+   <extends>QWidget</extends>
+   <header>listsc.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>C_listregion</class>
+   <extends>QWidget</extends>
+   <header location="global">listregion.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>C_listgcc</class>
+   <extends>QWidget</extends>
+   <header>listgcc.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
